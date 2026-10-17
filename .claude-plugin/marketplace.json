@@ -1,0 +1,5 @@
+{
+  "name": "claude-chess",
+  "owner": { "name": "Matt Fenner" },
+  "plugins": [{ "name": "chess-board", "source": "./" }]
+}

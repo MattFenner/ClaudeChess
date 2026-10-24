@@ -1,0 +1,6 @@
+{
+  "name": "claude-chess",
+  "owner": { "name": "Matt Fenner" },
+  "description": "Chess plugins for Claude Code.",
+  "plugins": []
+}

@@ -1,37 +1,36 @@
-# chess-board
+# claude-chess
 
-A Claude Code mod that adds a `ShowChessState` tool (listed to Claude as
-`mcp__chess-board__ShowChessState`). Claude calls it with a FEN position and
-the board is drawn in place of the tool-call row: an SVG board on the desktop
-app, a coloured text board in the terminal.
+A Claude Code plugin marketplace for chess plugins.
 
-Options: `orientation`, `lastMove`, `highlights`, `arrows`, `title`, and
-`saveTo` (a `.svg` path) to write the board to a file instead of drawing it.
+## Plugins
 
-## Install
+None yet.
 
-From this folder, in a shell:
+## Add the marketplace
 
-```bash
-claude plugin marketplace add C:\Dev\ClaudeChess
+At the prompt of a Claude Code terminal session:
+
+```
+/plugin marketplace add MattFenner/ClaudeChess
 ```
 
+Or from a shell:
+
 ```bash
-claude plugin install chess-board@claude-chess --scope user
+claude plugin marketplace add MattFenner/ClaudeChess
 ```
 
-The plugin is read straight from this folder, so after editing it run
-`/reload-plugins` in a terminal session (or start a new session).
+In the desktop app: click + next to the prompt box, then Plugins, then Add
+marketplace with `MattFenner/ClaudeChess`.
 
-## Develop
+Then install a plugin from it with `/plugin install <plugin>@claude-chess`.
+
+## Adding a plugin
+
+Put the plugin in its own folder and list it under `plugins` in
+`.claude-plugin/marketplace.json`, with `source` as the folder's path relative
+to the repository root (e.g. `"./plugins/my-plugin"`). Check it with:
 
 ```bash
 claude plugin validate .
 ```
-
-```bash
-claude plugin test .
-```
-
-`hooks/chess.ts` holds the FEN parsing and SVG drawing, `hooks/register.tsx`
-registers the tool and the render hooks, and `tests/` the tests.

@@ -1,0 +1,5 @@
+{
+  "name": "chess-board",
+  "version": "0.3.0",
+  "description": "Adds a ShowChessState tool that draws a chess position from FEN, with coloured highlights, arrows and square labels."
+}

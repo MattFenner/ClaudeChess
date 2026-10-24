@@ -2,5 +2,11 @@
   "name": "claude-chess",
   "owner": { "name": "Matt Fenner" },
   "description": "Chess plugins for Claude Code.",
-  "plugins": []
+  "plugins": [
+    {
+      "name": "chess-board",
+      "source": "./plugins/chess-board",
+      "description": "Adds a ShowChessState tool that draws a chess position from FEN, with coloured highlights, arrows and square labels."
+    }
+  ]
 }

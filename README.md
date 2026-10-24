@@ -4,7 +4,9 @@ A Claude Code plugin marketplace for chess plugins.
 
 ## Plugins
 
-None yet.
+- [chess-board](plugins/chess-board): a `ShowChessState` tool that draws a
+  chess position from FEN in the transcript, with coloured highlights, arrows
+  and square labels.
 
 ## Add the marketplace
 
